@@ -1,6 +1,6 @@
 var card = [
     {
-        link: "https://github.com/JonathanNBat",
+        link: "https://github.com/JonathanNBat/jonathannbat.github.io",
         title: "Pheonicks Site",
         image: "../images/windowimages/Pheonicks.png",
         description: "Website to showcase my progress and skillset"
