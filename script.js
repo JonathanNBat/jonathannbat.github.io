@@ -12,7 +12,7 @@ function cardLoad() {
         <a href="${card[i]["link"]}" style="text-decoration: none;">
         <div class="window">
             <div class="windowhead">
-                <h1 style="font-size: 20px; padding-left: 10px;"><strong>${card[i]["title"]}</strong></h1>
+                <h1 style="font-size: 3vh; padding-left: 1vw;"><strong>${card[i]["title"]}</strong></h1>
                 <div class="circle"></div>
             </div>
             <div class="windowcontent">

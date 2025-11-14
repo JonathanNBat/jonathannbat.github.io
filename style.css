@@ -27,49 +27,37 @@ body {
   body {
     width: fit-content;
   }
-  #Photo_Placeholder {
+  #cover_image {
     display: block;
     width: 42vw;
     height: 30vh;
   }
 }
 
+#cover_image {
+    padding:10px;
+    width:25vw;
+    height:auto;
+}
+
 header {
     background-color: #ffffff;
-    padding: 0.5rem;
+    padding: 1.5vh;
     display: flex;
-    gap: 20px;
     justify-content: space-between;
-    align-content: center;
-    flex-wrap: nowrap;
     flex-direction: row;
-    border: 5px #ffffff;
-    border-radius: 6px;
+    height: 10vh;
 }
 
 .header-content {
-    justify-content: center;
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-shrink: 1;
 }
 
-header ul {
-    list-style-type: none;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-header ul li {
-    padding: 5px;
-}
-
-#Title {
-    margin-left: 10%;
-    font-size: 300%;
+.socialsIcons {
+    width: 2vh; height: 2vh;
 }
 
 #Email {
@@ -85,7 +73,7 @@ header ul li {
     min-height: 40vh;
     display: flex;
     background-color: var(--text-color);
-    justify-content: space-evenly;
+    justify-content: center;
     color: #ffffff;
 }
 
@@ -97,6 +85,7 @@ header ul li {
     justify-content: center;
     text-align: center;
     width: 45%;
+    font-size: 2vh;
 }
 
 #goals {
@@ -104,7 +93,7 @@ header ul li {
     text-align: center;
     justify-content: flex-start;
     flex-direction: column;
-    font-size: large;
+    font-size: 3vh;
     align-items: center;
     background: #ffffff;
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(39, 70, 138, 1) 100%);
@@ -120,19 +109,19 @@ header ul li {
     width: 30vw;
     height: 40vh;
     background-color: #ffffff;
-    border-radius: 15px;
-    border: 5px solid #23345a ;
+    border-radius: 2vh;
+    border: 0.7vh solid #23345a ;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     resize: both;
-    margin: 5px;
+    margin: 2vh;
 }
 
 .circle {
-      width: 20px; 
-      height: 20px; 
+      width: 1.2vw; 
+      height: 1.2vw; 
       background-color: #a7b7ec;
       border-radius: 50%;
-      margin-right: 10px;
+      margin-right: 0.5vw;
     }
 
 .windowhead {
@@ -140,12 +129,13 @@ header ul li {
     height: 10%;
     width: 100%;
     background-color: #6177c0;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    border-bottom: 5px solid #23345a ;
+    border-top-right-radius: 1vh;
+    border-top-left-radius: 1vh;
+    border-bottom: 0.7vh solid #23345a ;
     align-items: center;
     justify-content: space-between;
     color: #ffffff;
+    font-size: 4vh;
 }
 
 .windowcontent {
@@ -155,6 +145,7 @@ header ul li {
     align-items: center;
     height: 100%;
     color: var(--text-color);
+    font-size: 2vh;
 }
 
 .seperator {
@@ -162,8 +153,8 @@ header ul li {
     height: 3%;
     background-color: #27468a;
     margin: 4vh 10% 4vh 10%;
-    border-radius: 10px;
-    font-size: 5px;
+    border-radius: 2vw;
+    font-size: 0.5vh;
 } 
 
 #Projects_body {
@@ -183,6 +174,7 @@ header ul li {
     background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(203, 211, 227, 1) 100%);
     border-radius: 15px;
     border-top: 5px solid #7b93c5;
+    font-size: 2vh;
 }
 
 .WindowsGrid {
