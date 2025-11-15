@@ -69,14 +69,16 @@ header {
     display: block;
 }
 
-#Email {
+.Email {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
+    text-decoration: none;
+    justify-content: center;
     
 }
-#Email p {
+.socials-text {
     font-size: clamp(0.5rem, 1.2vw, 1rem);
     color: var(--text-color);
     white-space: nowrap;
@@ -248,7 +250,7 @@ header {
         width: 6vw;
     }
 
-    #Email p {
+    .socials-text {
         font-size: 2rem;
     }
 
@@ -315,13 +317,14 @@ header {
         gap: 1.5vh;
     }
 
-    #Email {
+    .Email {
         width: 100%;
         justify-content: center;
+        text-decoration: none;
     }
 
-    #Email p {
-        font-size: 2vh;
+    .socials-text {
+        font-size: 1rem;
     }
 
     .Intro {
