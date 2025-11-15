@@ -16,48 +16,57 @@
 html {
     font-family: Momo Trust Display, 'Courier New', Courier, monospace;
     color: var(--text-color);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
     background-color: var(--base-color);
+    overflow-x: hidden;
+    max-width: 100%;
     
 }
 
-@media (max-width: 768px) {
-  body {
-    width: fit-content;
-  }
-  #cover_image {
-    display: block;
-    width: 42vw;
-    height: 30vh;
-  }
+/*@media (max-width: 768px) {
 }
-
-#cover_image {
-    padding:10px;
-    width:25vw;
-    height:auto;
-}
+*/
 
 header {
     background-color: #ffffff;
-    padding: 1.5vh;
+    padding: clamp(15px, 1.5vh, 25px) clamp(20px, 2vw, 40px);
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    height: 10vh;
+    align-items: center;
+    min-height: clamp(60px, 10vh, 100px);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header-title{
+    width: 25%;
+    flex-shrink: 0;
+}
+
+#Title {
+    font-size: 6vh;
+    margin-left: 10%;
+    color: var(--text-color);
+    font-weight: bold;
 }
 
 .header-content {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-shrink: 1;
+    align-items: center;
+    gap: 1.5vw;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .socialsIcons {
-    width: 2vh; height: 2vh;
+    width: clamp(24px, 2.5vw, 30px);
+    height: clamp(24px, 2.5vw, 30px);
+    flex-shrink: 0;
+    display: block;
 }
 
 #Email {
@@ -65,7 +74,20 @@ header {
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    font-size: 80%;
+    
+}
+#Email p {
+    font-size: clamp(0.5rem, 1.2vw, 1rem);
+    color: var(--text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+}
+
+#cover_image {
+    width:25vw;
+    height:auto;
 }
 
 .Intro {
@@ -78,7 +100,6 @@ header {
 }
 
 .IntroText {
-    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +132,7 @@ header {
     background-color: #ffffff;
     border-radius: 2vh;
     border: 0.7vh solid #23345a ;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5% 5% 5%px rgba(0, 0, 0, 0.2);
     resize: both;
     margin: 2vh;
 }
@@ -169,11 +190,11 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 4vh;
     background: #ffffff;
     background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(203, 211, 227, 1) 100%);
-    border-radius: 15px;
-    border-top: 5px solid #7b93c5;
+    border-radius: 2vw;
+    border-top: 0.5vh solid #7b93c5;
     font-size: 2vh;
 }
 
